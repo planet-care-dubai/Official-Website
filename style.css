@@ -73,9 +73,20 @@ nav .navigation ul li a {
     transition: 0.3s ease;
 }
 
+nav .navigation ul li a:hover{
+    text-decoration: underline;
+    transition: width 0.3s;
+
+}
+
 nav .navigation ul li a:hover,
 nav .navigation ul li a.active {
-    color:  rgb(235, 136, 49);
+    color:  rgb(255, 119, 0);
+}
+
+nav .navigation ul li a:after{
+
+
 }
 
 nav .navigation ul li a.blue {
