@@ -132,7 +132,7 @@ nav .navigation ul li a.blue:hover {
 }
 
 #home {
-    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(14, 14, 50, 0.7)), url("images/Banner.png");
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("video.mp4");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -189,7 +189,8 @@ nav .navigation ul li a.blue:hover {
     text-decoration: none;
     font-size: 0.9rem;
     color: #fff;
-    background: #FDC93B;
+    border:2px solid rgb(255, 255, 255);
+    background-color: transparent;
 }
 
 #home a.yellow:hover {
