@@ -283,20 +283,39 @@ nav .navigation ul li a.blue:hover {
 }
 
 
-/* Registration */
 
-#registration {
-    margin-top: 8vw;
-    padding: 6vw 8vw 15vw 8vw;
-    background-image:url("images/map.png");
+
+/* World Map*/
+
+#world-map {
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
+#world-map img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #world-map {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #world-map {
+        padding: 10px;
+    }
+}
+
+
 
 #experts {
     padding: 8vw 8vw 0 8vw;
@@ -976,13 +995,7 @@ footer .pro-link i:hover {
     #course {
         padding: 8vw 4vw 0 4vw;
     }
-    #registration {
-        margin-top: 8vw;
-        padding: 6vw 4vw;
-    }
-    #registration .reminder .time {
-        display: flex;
-        flex-wrap: wrap;
+  
     }
     footer .pro-link {
         margin-top: 15px;
@@ -1032,30 +1045,13 @@ footer .pro-link i:hover {
     #contact .getin {
         width: 250px;
     }
-}
+
 
 @media (max-width: 475px) {
     h1 {
         font-size: 2rem;
     }
-    #registration {
-        margin-top: 8vw;
-        padding: 6vw 4vw 6vw 4vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    #registration .reminder .time {
-        margin-top: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-    #registration .form {
-        margin-top: 20px;
-        width: 100%;
-    }
+
     footer input {
         width: 100%;
         margin-bottom: 15px;
