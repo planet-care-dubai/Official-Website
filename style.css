@@ -75,18 +75,12 @@ nav .navigation ul li a {
     border-bottom: 2px solid transparent; /* Transparent border by default */
 }
 
-
-
-
-nav .navigation ul li a:hover,
-nav .navigation ul li a.active {
+nav .navigation ul li a:not(.blue):hover,
+nav .navigation ul li a:not(.blue).active {
     color: rgb(21, 21, 100);
-    position: relative;
 }
 
-<<<<<<< HEAD
-=======
-nav .navigation ul li a::after {
+nav .navigation ul li a:not(.blue)::after {
     content: '';
     position: absolute;
     left: 0;
@@ -97,12 +91,11 @@ nav .navigation ul li a::after {
     transition: width 0.3s ease;
 }
 
-nav .navigation ul li a:hover::after,
-nav .navigation ul li a.active::after {
+nav .navigation ul li a:not(.blue):hover::after,
+nav .navigation ul li a:not(.blue).active::after {
     width: 100%;
 }
 
->>>>>>> b4c4a4585f8a212670b4f30beea0c6c5f16069fe
 nav .navigation ul li a.blue {
     font-size: 0.8rem;
     padding: 13px 25px;
@@ -113,12 +106,13 @@ nav .navigation ul li a.blue {
     cursor: pointer;
     color: rgb(21, 21, 100);
     border: 1px solid #412e88;
-    /* background: rgb(50, 50, 136); */
 }
 
 nav .navigation ul li a.blue:hover {
     box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.1);
 }
+
+
 
 #menu-btn {
     width: 30px;
