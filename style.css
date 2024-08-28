@@ -75,24 +75,7 @@ nav .navigation ul li a {
 
 nav .navigation ul li a:hover,
 nav .navigation ul li a.active {
-<<<<<<< Updated upstream
-    color: #FDC93B;
-    
-}
-nav .navigation ul li a:hover{
-    text-decoration: underline;
-    transition: width 0.3s;
-=======
-    color:  rgb(235, 136, 49); content: '';
-    position: absolute; 
-    bottom: -3px; 
-    left: 0; 
-    width: 0; 
-    height: 2px; 
-    background-color: #07344f; 
-    transition: width 0.3s;
-    border-radius: 5px;
->>>>>>> Stashed changes
+    color:  rgb(235, 136, 49);
 }
 
 nav .navigation ul li a.blue {
