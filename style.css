@@ -196,40 +196,77 @@ nav .navigation ul li a.blue:hover {
 }
 
 #features {
-    padding: 5vw 8vw 0 8vw;
+    background-color: rgba(202, 233, 250, 0.5);
+    padding: 5vw 8vw 5vw 8vw;
     text-align: center;
+    margin: 50px auto 0 auto;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
 }
 
 #features .fea-base {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1rem;
-    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line if necessary */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: 1rem; /* Adds space between the boxes */
 }
 
-#features .fea-box {
+ .fea-box {
+    margin-top: 70px;
+    width: 260px;
+    height: 344px;
     background: #F9F9FF;
     padding: 2rem;
-    text-align: start;
+    border-radius: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth shadow effect */
 }
 
-#features .fea-box i {
-    font-size: 2.3rem;
-    color: rgb(44, 44, 80);
+.fea-box:hover{
+    transform: translateY(-15px);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fea-box::after {
+  content: '';
+  position: absolute; /* Keep it absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Keep z-index at 0 so it doesn’t go behind the parent background */
+  border-radius: 1.2em; /* Match the border-radius of the card */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  pointer-events: none; /* Ensure the pseudo-element doesn’t interfere with hover effects */
+}
+
+#features .fea-image {
+    width: 50%;
+    margin-bottom: 1rem;
 }
 
 #features .fea-box h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    color: rgb(46, 46, 59);
+    color: #c1844d;
+    text-decoration: underline;
     padding: 13px 0 7px 0;
 }
 
 #features .fea-box p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    color: rgb(70, 70, 87);
 }
+
 
 #course {
     padding: 8vw 8vw 0 8vw;
@@ -267,7 +304,73 @@ nav .navigation ul li a.blue:hover {
 }
 
 
+#Key {
+    background-color: #EFF6F7;
+    padding: 5vw 8vw 5vw 8vw;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+}
 
+#Key .key-base {
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line if necessary */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: 1rem; /* Adds space between the boxes */
+}
+
+ .key-box {
+    margin-top: 70px;
+    width: 260px;
+    height: 344px;
+    background: #0BA6C7;
+    padding: 2rem;
+    border-top: 7px solid #A0C0F2;
+    border-radius: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for smooth shadow effect */
+}
+
+.key-box:hover{
+    transform: translateY(-15px);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.key-box::after {
+  content: '';
+  position: absolute; /* Keep it absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Keep z-index at 0 so it doesn’t go behind the parent background */
+  border-radius: 1.2em; /* Match the border-radius of the card */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  pointer-events: none; /* Ensure the pseudo-element doesn’t interfere with hover effects */
+}
+
+#Key .key-box h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 13px 0 7px 0;
+}
+
+#Key .key-box p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 
 
@@ -315,6 +418,15 @@ nav .navigation ul li a.blue:hover {
     margin-top: 50px;
 }
 
+#experts .profile img {
+    width: 150px; /* Ensure this matches your desired size */
+    height: 150px; /* Ensure this matches your desired size */
+    object-fit: cover; /* Ensures the image fits the container */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+
 #experts .expert-box .profile {
     background: #fafaf1;
     padding: 30px 10px;
@@ -337,6 +449,77 @@ nav .navigation ul li a.blue:hover {
     border: 1px solid rgb(21, 21, 100);
     cursor: pointer;
 }
+
+#section4 {
+    background: url("Images2/parallax1.png");
+    padding: 5vw 8vw;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading1 {
+    color: white;
+}
+
+#section4 .card-base {
+    display: flex;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line if necessary */
+    justify-content: center; /* Centers boxes horizontally */
+    gap: 5rem; /* Adds space between the boxes */
+}
+
+#section4 .card-box {
+    display: flex;
+    flex-direction: column; /* Stacks image and heading vertically */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text within each card-box */
+}
+
+#section4 .card-image {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 60px;
+    margin-bottom: 0.5rem; /* Adds space below the image */
+}
+
+#section4 .card-box h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;;
+    margin: 0; /* Removes default margin for better alignment */
+    padding: 0; /* Removes padding for better alignment */
+}
+
+.card-image{
+    background: linear-gradient(
+      120deg, 
+      #6c6c6c 30%, /* Darker grey for more visibility */
+      #d0d0d0 38%, 
+      #d0d0d0 40%, 
+      #6c6c6c 48% 
+    );
+    border-radius: 20%;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+  }
+
+  @keyframes load89234 {
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
 
 footer {
     margin-top: 8vw;
@@ -967,8 +1150,19 @@ footer .pro-link i:hover {
         line-height: 25px;
     }
     #features {
-        padding: 8vw 4vw 0 4vw;
+        padding: 5vw 8vw 5vw 8vw; /* Adjust padding for smaller screens */
+        margin: 30px auto 0 auto;
     }
+
+    #features .fea-base {
+        margin-top: 30px; /* Increase margin to move the grid down */
+    }
+
+    .fea-box {
+        margin-top: 30px; /* Increase margin to move individual boxes down */
+        width: 90%; /* Adjust width to fit smaller screens */
+    }
+
     #course {
         padding: 8vw 4vw 0 4vw;
     }
@@ -1027,6 +1221,20 @@ footer .pro-link i:hover {
 @media (max-width: 475px) {
     h1 {
         font-size: 2rem;
+    }
+
+    #features {
+        padding: 5vw 2vw 15vw 2vw; /* Further adjust padding for very small screens */
+        margin: 20px auto 0 auto; /* Further adjust margin for very small screens */
+    }
+
+    #features .fea-base {
+        margin-top: 40px; /* Further increase margin to move the grid down */
+    }
+
+    .fea-box {
+        margin-top: 40px; /* Further increase margin to move individual boxes down */
+        width: 100%; /* Ensure boxes fit the screen width */
     }
 
     footer input {
