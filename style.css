@@ -128,6 +128,8 @@ nav .navigation ul li a.blue:hover {
     display: none;
 }
 
+
+
 #home {
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(12, 11, 49, 0.7)), url("images/Banner.png");
     background-repeat: no-repeat;
@@ -520,6 +522,22 @@ nav .navigation ul li a.blue:hover {
     }
   }
 
+#food-container{
+    background-color: EFF6F7;
+    padding: 5vw 8vw 5vw 8vw;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column; /* Ensures content stacks vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+}
+
+.maida-img{
+    width: 70%;
+}
 
 footer {
     margin-top: 8vw;
