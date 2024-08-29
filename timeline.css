@@ -51,14 +51,54 @@
   animation-delay: 5s;
 }
 
-.text-box{
+.text-box {
   padding: 20px 30px;
   background: #fff;
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px; /* Slightly increased for smoother corners */
   font-size: 15px;
-  border: 2px solid black;
+  border: 2px solid #e0e0e0; /* Lightened the border for a softer look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.text-box:hover {
+  transform: translateY(-5px); /* Slight lift on hover for interactivity */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.text-box h2 {
+  font-weight: 700; /* Increased font weight for better readability */
+  color: #333; /* Darkened the text color for contrast */
+  margin-bottom: 10px; /* Added space below the title */
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #777; /* Lightened the date text for subtlety */
+}
+
+.timeline::after {
+  background: #ddd; /* Lightened the timeline line */
+}
+
+.left-container-arrow {
+  border-left: 15px solid #fff;
+}
+
+.right-container-arrow {
+  border-right: 15px solid #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .text-box {
+    font-size: 14px; /* Slightly reduced font size for smaller screens */
+    padding: 15px 20px; /* Adjusted padding for mobile view */
+  }
+}
+
+
 .left-container{
   left: 0;
 }
