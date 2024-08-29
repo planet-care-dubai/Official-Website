@@ -428,7 +428,7 @@ nav .navigation ul li a.blue:hover {
 
 
 #experts .expert-box .profile {
-    background: #fafaf1;
+    background: rgba(202, 233, 250, 0.5);
     padding: 30px 10px;
 }
 
