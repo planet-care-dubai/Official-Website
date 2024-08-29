@@ -352,8 +352,17 @@ nav .navigation ul li a.blue:hover {
     margin-top: 50px;
 }
 
+#experts .profile img {
+    width: 150px; /* Ensure this matches your desired size */
+    height: 150px; /* Ensure this matches your desired size */
+    object-fit: cover; /* Ensures the image fits the container */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+
 #experts .expert-box .profile {
-    background: #fafaf1;
+    background: rgba(202, 233, 250, 0.5);
     padding: 30px 10px;
 }
 
