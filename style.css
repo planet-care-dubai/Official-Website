@@ -22,10 +22,7 @@ h1 {
     color: rgb(35, 35, 85);
 }
 
-span {
-    font-size: .9rem;
-    color: #757373;
-}
+
 
 h6 {
     font-size: 1.1rem;
@@ -269,18 +266,7 @@ nav .navigation ul li a.blue:hover {
     font-size: .9rem;
 }
 
-#course .course-box .courses .cost {
-    background-color: rgb(74, 74, 136);
-    color: #fff;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 100px;
-    right: 15px;
-}
+
 
 
 
@@ -690,9 +676,7 @@ footer .pro-link i:hover {
     color: #29303B;
 }
 
-#course-inner .overview .course-head .star {
-    margin: 6px 0;
-}
+
 
 #course-inner .overview .course-head i {
     color: #FDC93B;
@@ -703,14 +687,7 @@ footer .pro-link i:hover {
     font-size: 15px;
 }
 
-#course-inner .overview .course-head span {
-    padding: 16px 22px 13px;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #5838fc;
-    background: rgba(88, 56, 252, 0.1);
-}
+
 
 #course-inner .learn p {
     font-size: 15px;
@@ -1103,9 +1080,7 @@ footer .pro-link i:hover {
     #course-inner .overview .course-head h2 {
         font-size: 22px;
     }
-    #course-inner .overview .course-head span {
-        font-size: 22px;
-    }
+
     #course-inner .enroll {
         width: 100%;
     }
