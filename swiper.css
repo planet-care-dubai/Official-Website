@@ -1,0 +1,38 @@
+.media-left {
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 5px 5px rgba(13, 110, 253, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 30% 30% 50%;
+    }
+  }
+
+  .testimonial-card {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for a 3D effect */
+}
+
+.testimonial-card img {
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+.testimonial-card h6 {
+    color: #333; /* Change text color if needed */
+}
+
+.testimonial-card p {
+    color: #666; /* Change text color if needed */
+}
+
+.testimonial-card span {
+    color: #333; /* Change icon color if needed */
+}
