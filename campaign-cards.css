@@ -1,0 +1,126 @@
+.campaign-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f5f7fa;
+  }
+  
+  .campaign-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: calc(33.333% - 30px);
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .campaign-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .campaign-card-image-container {
+    width: 100%;
+    height: 500px; /* Increased height for larger images */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .campaign-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .campaign-card:hover .campaign-card-image {
+    transform: scale(1.05);
+  }
+  
+  .campaign-card-content {
+    padding: 25px;
+    position: relative;
+  }
+  
+  .campaign-card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .campaign-card-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+  }
+  
+  .campaign-card:hover .campaign-card-title::after {
+    width: 75px;
+  }
+  
+  .campaign-card-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .campaign-card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .campaign-card-button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 1200px) {
+    .campaign-card {
+      width: calc(50% - 30px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .campaign-card {
+      width: 100%;
+      max-width: 450px;
+    }
+    
+    .campaign-card-image-container {
+      height: 350px; /* Even larger images on mobile for better visibility */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .campaign-card-content {
+      padding: 20px;
+    }
+    
+    .campaign-card-title {
+      font-size: 1.2rem;
+    }
+    
+    .campaign-card-description {
+      font-size: 0.9rem;
+    }
+  }
