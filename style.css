@@ -1135,7 +1135,7 @@ footer .pro-link i:hover {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        background: rgba( 17, 20, 104, 0.45);
+        background:linear-gradient(rgba(9, 5, 54, 0.3), rgba(12, 11, 49, 0.7));
         backdrop-filter: blur( 4.5px);
         -webkit-backdrop-filter: blur( 4.5px);
         border: 1px solid rgba( 255, 255, 255, 0.18);
