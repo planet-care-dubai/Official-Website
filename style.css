@@ -558,6 +558,16 @@ footer .footer-col {
     padding-bottom: 40px;
 }
 
+footer .footer-col a{
+   text-decoration: none;
+   color: #0BA6C7;
+}
+
+footer .footer-col a:hover{
+    text-decoration: none;
+    color: #ffffff;
+ }
+
 footer h3 {
     color: rgb(241, 240, 245);
     font-weight: 600;
@@ -571,6 +581,8 @@ footer li {
     font-size: 15px;
     cursor: pointer;
     transition: 0.3s ease;
+ 
+    
 }
 
 footer li:hover {
@@ -611,11 +623,11 @@ footer .subscribe a.yellow {
     text-decoration: none;
     font-size: 0.9rem;
     color: #2c2c2c;
-    background: #FDC93B;
+    background: #0BA6C7;
 }
 
 footer .subscribe a.yellow:hover {
-    background: #f7f3e9;
+    background: #eaeae8;
     color: rgb(21, 21, 100);
 }
 
@@ -642,7 +654,7 @@ footer .pro-link i {
 }
 
 footer .pro-link i:hover {
-    background: #FDC93B;
+    background: #0BA6C7;
     color: #2c2c2c;
 }
 
